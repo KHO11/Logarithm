@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    
+</head>
+
+<body>
+    <script>
+        class Numbers {
+            constructor(x,y) {
+                this.x = x,
+                this.y = y;
+            }
+
+            getBaseLog = () => {
+                return Math.log(this.y) / Math.log(this.x);
+            }
+
+            Addition = () => {
+                return Math.log2(this.x) + Math.log2(this.y);
+            }
+
+            Subtraction = () => {
+                return Math.log2(this.y) - Math.log2(this.x);
+            }
+
+
+        }
+
+        values = new Numbers(10,100);
+        values2 = new Numbers(13,169);
+       
+        console.log(values.getBaseLog());
+        console.log(values.Addition());
+        console.log(values2.Subtraction());
+
+    </script>
+</body>
+
+</html>
